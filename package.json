@@ -1,0 +1,11 @@
+{
+  "name": "stokara",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/copy-assets.mjs",
+    "test:browser": "node tests/browser/smoke.mjs"
+  },
+  "dependencies": { "bootstrap": "^5.3.8" },
+  "devDependencies": { "@playwright/test": "^1.56.0" }
+}

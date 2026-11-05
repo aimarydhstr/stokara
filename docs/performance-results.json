@@ -1,0 +1,29 @@
+{
+    "mysql_version": "8.4.3",
+    "database": "stokara_testing",
+    "synthetic_rows": 20000,
+    "rounds_after_warmup": 7,
+    "query": "SELECT SUM(quantity) AS total FROM stock_movements WHERE type = ? AND occurred_at >= ? AND occurred_at <= ?",
+    "parameters": [
+        "out",
+        "2026-11-02",
+        "2026-11-04"
+    ],
+    "results": {
+        "full_scan": {
+            "median_ms": 11.967,
+            "result": 84,
+            "access_type": "ALL",
+            "chosen_index": null,
+            "estimated_rows": 20000
+        },
+        "indexed": {
+            "median_ms": 0.991,
+            "result": 84,
+            "access_type": "range",
+            "chosen_index": "stock_movements_type_occurred_at_index",
+            "estimated_rows": 84
+        }
+    },
+    "note": "Baseline uses USE INDEX () to demonstrate a full scan. Indexed query lets the optimizer choose. Results are local measurements, not performance guarantees. Synthetic data is rolled back."
+}

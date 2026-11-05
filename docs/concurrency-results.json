@@ -1,0 +1,15 @@
+{
+    "database": "stokara_testing",
+    "initial_stock": 10,
+    "simultaneous_requests": [
+        7,
+        7
+    ],
+    "outcomes": [
+        "success",
+        "rejected"
+    ],
+    "final_stock": 3,
+    "outgoing_records": 1,
+    "passed": true
+}

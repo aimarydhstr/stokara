@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="D:\asesor\stokara\phpunit.xml" tests="26" assertions="124" errors="0" failures="0" skipped="0" time="4.257992">
+    <testsuite name="Unit" tests="7" assertions="9" errors="0" failures="0" skipped="0" time="0.542713">
+      <testsuite name="Tests\Unit\StockOperationTest" file="D:\asesor\stokara\tests\Unit\StockOperationTest.php" tests="7" assertions="9" errors="0" failures="0" skipped="0" time="0.542713">
+        <testcase name="test_polymorphic_stock_operations_and_exact_depletion" file="D:\asesor\stokara\tests\Unit\StockOperationTest.php" line="10" class="Tests\Unit\StockOperationTest" classname="Tests.Unit.StockOperationTest" assertions="3" time="0.350482"/>
+        <testsuite name="Tests\Unit\StockOperationTest::test_invalid_operations_are_rejected" tests="6" assertions="6" errors="0" failures="0" skipped="0" time="0.192231">
+          <testcase name="test_invalid_operations_are_rejected with data set #0" file="D:\asesor\stokara\tests\Unit\StockOperationTest.php" line="17" class="Tests\Unit\StockOperationTest" classname="Tests.Unit.StockOperationTest" assertions="1" time="0.035652"/>
+          <testcase name="test_invalid_operations_are_rejected with data set #1" file="D:\asesor\stokara\tests\Unit\StockOperationTest.php" line="17" class="Tests\Unit\StockOperationTest" classname="Tests.Unit.StockOperationTest" assertions="1" time="0.030404"/>
+          <testcase name="test_invalid_operations_are_rejected with data set #2" file="D:\asesor\stokara\tests\Unit\StockOperationTest.php" line="17" class="Tests\Unit\StockOperationTest" classname="Tests.Unit.StockOperationTest" assertions="1" time="0.028630"/>
+          <testcase name="test_invalid_operations_are_rejected with data set #3" file="D:\asesor\stokara\tests\Unit\StockOperationTest.php" line="17" class="Tests\Unit\StockOperationTest" classname="Tests.Unit.StockOperationTest" assertions="1" time="0.036164"/>
+          <testcase name="test_invalid_operations_are_rejected with data set #4" file="D:\asesor\stokara\tests\Unit\StockOperationTest.php" line="17" class="Tests\Unit\StockOperationTest" classname="Tests.Unit.StockOperationTest" assertions="1" time="0.032720"/>
+          <testcase name="test_invalid_operations_are_rejected with data set #5" file="D:\asesor\stokara\tests\Unit\StockOperationTest.php" line="17" class="Tests\Unit\StockOperationTest" classname="Tests.Unit.StockOperationTest" assertions="1" time="0.028663"/>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature" tests="19" assertions="115" errors="0" failures="0" skipped="0" time="3.715278">
+      <testsuite name="Tests\Feature\AccessTest" file="D:\asesor\stokara\tests\Feature\AccessTest.php" tests="1" assertions="12" errors="0" failures="0" skipped="0" time="0.122191">
+        <testcase name="test_guest_cannot_access_inventory_pages" file="D:\asesor\stokara\tests\Feature\AccessTest.php" line="6" class="Tests\Feature\AccessTest" classname="Tests.Feature.AccessTest" assertions="12" time="0.122191"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\InventoryTest" file="D:\asesor\stokara\tests\Feature\InventoryTest.php" tests="18" assertions="103" errors="0" failures="0" skipped="0" time="3.593087">
+        <testcase name="test_stock_in_out_preserve_stock_and_audit_history" file="D:\asesor\stokara\tests\Feature\InventoryTest.php" line="33" class="Tests\Feature\InventoryTest" classname="Tests.Feature.InventoryTest" assertions="6" time="1.438986"/>
+        <testcase name="test_insufficient_stock_rolls_back_every_change" file="D:\asesor\stokara\tests\Feature\InventoryTest.php" line="41" class="Tests\Feature\InventoryTest" classname="Tests.Feature.InventoryTest" assertions="4" time="0.064230"/>
+        <testcase name="test_empty_stock_rejects_stock_out" file="D:\asesor\stokara\tests\Feature\InventoryTest.php" line="48" class="Tests\Feature\InventoryTest" classname="Tests.Feature.InventoryTest" assertions="3" time="0.054053"/>
+        <testcase name="test_repeated_submission_does_not_apply_stock_twice" file="D:\asesor\stokara\tests\Feature\InventoryTest.php" line="53" class="Tests\Feature\InventoryTest" classname="Tests.Feature.InventoryTest" assertions="5" time="0.052005"/>
+        <testcase name="test_service_also_guards_duplicate_requests" file="D:\asesor\stokara\tests\Feature\InventoryTest.php" line="61" class="Tests\Feature\InventoryTest" classname="Tests.Feature.InventoryTest" assertions="2" time="0.056008"/>
+        <testcase name="test_invalid_quantity_type_date_and_item_are_rejected" file="D:\asesor\stokara\tests\Feature\InventoryTest.php" line="74" class="Tests\Feature\InventoryTest" classname="Tests.Feature.InventoryTest" assertions="12" time="0.138304"/>
+        <testcase name="test_item_create_update_cannot_bypass_stock_ledger" file="D:\asesor\stokara\tests\Feature\InventoryTest.php" line="84" class="Tests\Feature\InventoryTest" classname="Tests.Feature.InventoryTest" assertions="5" time="0.127876"/>
+        <testcase name="test_duplicate_sku_is_rejected" file="D:\asesor\stokara\tests\Feature\InventoryTest.php" line="94" class="Tests\Feature\InventoryTest" classname="Tests.Feature.InventoryTest" assertions="2" time="0.062824"/>
+        <testcase name="test_unused_item_can_be_deleted_and_historical_item_is_protected" file="D:\asesor\stokara\tests\Feature\InventoryTest.php" line="98" class="Tests\Feature\InventoryTest" classname="Tests.Feature.InventoryTest" assertions="6" time="0.109042"/>
+        <testcase name="test_category_crud_and_referenced_category_protection" file="D:\asesor\stokara\tests\Feature\InventoryTest.php" line="109" class="Tests\Feature\InventoryTest" classname="Tests.Feature.InventoryTest" assertions="6" time="0.107666"/>
+        <testcase name="test_all_pages_render_with_database_relationships" file="D:\asesor\stokara\tests\Feature\InventoryTest.php" line="119" class="Tests\Feature\InventoryTest" classname="Tests.Feature.InventoryTest" assertions="20" time="0.369236"/>
+        <testcase name="test_empty_search_and_stock_filters" file="D:\asesor\stokara\tests\Feature\InventoryTest.php" line="126" class="Tests\Feature\InventoryTest" classname="Tests.Feature.InventoryTest" assertions="6" time="0.124687"/>
+        <testcase name="test_movement_filters_and_csv_have_same_selection" file="D:\asesor\stokara\tests\Feature\InventoryTest.php" line="132" class="Tests\Feature\InventoryTest" classname="Tests.Feature.InventoryTest" assertions="7" time="0.208184"/>
+        <testcase name="test_csv_neutralizes_spreadsheet_formulas" file="D:\asesor\stokara\tests\Feature\InventoryTest.php" line="142" class="Tests\Feature\InventoryTest" classname="Tests.Feature.InventoryTest" assertions="1" time="0.075908"/>
+        <testcase name="test_dashboard_chart_uses_real_daily_quantities" file="D:\asesor\stokara\tests\Feature\InventoryTest.php" line="147" class="Tests\Feature\InventoryTest" classname="Tests.Feature.InventoryTest" assertions="3" time="0.095923"/>
+        <testcase name="test_dashboard_queries_remain_bounded" file="D:\asesor\stokara\tests\Feature\InventoryTest.php" line="152" class="Tests\Feature\InventoryTest" classname="Tests.Feature.InventoryTest" assertions="3" time="0.102250"/>
+        <testcase name="test_invalid_login_is_rejected_valid_login_and_logout_work" file="D:\asesor\stokara\tests\Feature\InventoryTest.php" line="161" class="Tests\Feature\InventoryTest" classname="Tests.Feature.InventoryTest" assertions="11" time="0.317669"/>
+        <testcase name="test_missing_item_returns_not_found" file="D:\asesor\stokara\tests\Feature\InventoryTest.php" line="172" class="Tests\Feature\InventoryTest" classname="Tests.Feature.InventoryTest" assertions="1" time="0.088238"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

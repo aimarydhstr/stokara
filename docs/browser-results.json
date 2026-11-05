@@ -1,0 +1,154 @@
+{
+  "base": "http://127.0.0.1:8000",
+  "results": [
+    {
+      "name": "Login page returns HTTP 200",
+      "passed": true
+    },
+    {
+      "name": "Login and session persist",
+      "passed": true
+    },
+    {
+      "name": "Dashboard renders seeded inventory",
+      "passed": true
+    },
+    {
+      "name": "Chart displays nonzero real data",
+      "passed": true
+    },
+    {
+      "name": "HTTP 200 /items",
+      "passed": true
+    },
+    {
+      "name": "Desktop layout fits /items",
+      "passed": true
+    },
+    {
+      "name": "HTTP 200 /items/create",
+      "passed": true
+    },
+    {
+      "name": "Desktop layout fits /items/create",
+      "passed": true
+    },
+    {
+      "name": "HTTP 200 /items/1",
+      "passed": true
+    },
+    {
+      "name": "Desktop layout fits /items/1",
+      "passed": true
+    },
+    {
+      "name": "HTTP 200 /items/1/edit",
+      "passed": true
+    },
+    {
+      "name": "Desktop layout fits /items/1/edit",
+      "passed": true
+    },
+    {
+      "name": "HTTP 200 /categories",
+      "passed": true
+    },
+    {
+      "name": "Desktop layout fits /categories",
+      "passed": true
+    },
+    {
+      "name": "HTTP 200 /movements",
+      "passed": true
+    },
+    {
+      "name": "Desktop layout fits /movements",
+      "passed": true
+    },
+    {
+      "name": "HTTP 200 /movements/create?type=in",
+      "passed": true
+    },
+    {
+      "name": "Desktop layout fits /movements/create?type=in",
+      "passed": true
+    },
+    {
+      "name": "HTTP 200 /movements/create?type=out",
+      "passed": true
+    },
+    {
+      "name": "Desktop layout fits /movements/create?type=out",
+      "passed": true
+    },
+    {
+      "name": "Search empty state",
+      "passed": true
+    },
+    {
+      "name": "Category modal opens and closes",
+      "passed": true
+    },
+    {
+      "name": "Duplicate category shows validation inside reopened modal",
+      "passed": true
+    },
+    {
+      "name": "Category form preserves user input after validation failure",
+      "passed": true
+    },
+    {
+      "name": "Stock preview computes outgoing quantity",
+      "passed": true
+    },
+    {
+      "name": "Client validation rejects insufficient stock",
+      "passed": true
+    },
+    {
+      "name": "Missing CSRF token is rejected",
+      "passed": true
+    },
+    {
+      "name": "CSV download works",
+      "passed": true
+    },
+    {
+      "name": "Mobile navigation opens and closes",
+      "passed": true
+    },
+    {
+      "name": "Mobile layout fits /",
+      "passed": true
+    },
+    {
+      "name": "Mobile layout fits /items",
+      "passed": true
+    },
+    {
+      "name": "Mobile layout fits /categories",
+      "passed": true
+    },
+    {
+      "name": "Mobile layout fits /movements",
+      "passed": true
+    },
+    {
+      "name": "Mobile layout fits /movements/create?type=out",
+      "passed": true
+    },
+    {
+      "name": "Mobile layout fits /items/create",
+      "passed": true
+    },
+    {
+      "name": "Logout clears authenticated session",
+      "passed": true
+    },
+    {
+      "name": "No browser JavaScript or HTTP 500 errors",
+      "passed": true
+    }
+  ],
+  "issues": []
+}

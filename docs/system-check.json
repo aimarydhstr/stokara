@@ -1,0 +1,13 @@
+{
+    "database": "stokara",
+    "mysql_version": "8.4.3",
+    "items": 18,
+    "categories": 6,
+    "movements": 540,
+    "ledger_consistent": true,
+    "inconsistent_items": [],
+    "application_permissions": [
+        "GRANT USAGE ON *.* TO `stokara_app`@`127.0.0.1`",
+        "GRANT SELECT, INSERT, UPDATE, DELETE ON `stokara`.* TO `stokara_app`@`127.0.0.1`"
+    ]
+}
